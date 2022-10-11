@@ -12,7 +12,8 @@ vector<int> find(int a[], int n , int x )
     // for first occurence
     int t=-1;
     while(st<=end){
-        int mid= (st+end)/2;
+        // int mid= (st+end)/2;
+        int mid= st + (end-st)/2;
         if(a[mid]==x){
             t= mid;
             end= mid-1;
@@ -29,7 +30,8 @@ vector<int> find(int a[], int n , int x )
     st= 0; 
     end= n-1;
     while(st<=end){
-        int mid= (st+end)/2;
+        // int mid= (st+end)/2;
+        int mid= st + (end-st)/2;
         if(a[mid]==x){
             t= mid;
             st= mid+1;
